@@ -1,139 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Subramanyam | Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">Subramanyam</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Tappeta Subramanyam</h1>
-      <p class="subtitle">Full Stack Developer | ECE Undergraduate</p>
-      <p class="description">
-        Passionate about building scalable, real-time, and secure web applications
-        using modern full-stack technologies.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn outline">Contact Me</a>
-      </div>
+    <div class="video-bg-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="galaxy.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
+    <nav class="navbar">
+        <div class="logo">Subramanyam</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="glow-text">Tappeta Subramanyam</h1>
+            <p class="subtitle">Full Stack Developer | ECE Undergraduate</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
     <h2>About Me</h2>
-    <p>
-      I am an Electronics and Communication Engineering undergraduate at
-      Sri Venkateswara University College of Engineering, Tirupati, with strong
-      academic performance and hands-on experience in full-stack development,
-      real-time systems, and database-driven applications.
-    </p>
-  </section>
+    <div class="about-content">
+        <p>
+            I am a final-year <strong>Electronics and Communication Engineering</strong> undergraduate at <strong>SVUCE, Tirupati</strong>, with a strong passion for software development. 
+            I have hands-on experience in building <strong>full-stack web applications</strong>, implementing <strong>real-time communication systems</strong>, and designing <strong>role-based platforms</strong>.
+        </p>
+        <p>
+            My technical journey includes securing <strong>State Rank 42</strong> in ECET 2024 and maintaining a consistent academic record with a <strong>CGPA of 8.6</strong>. 
+            Beyond coding, I have contributed to the development of my college's official website and am always eager to learn new technologies to solve real-world problems.
+        </p>
+        <p>
+            I am a quick learner who thrives in team environments, valuing <strong>adaptability</strong> and <strong>collaboration</strong> to deliver reliable software solutions.
+        </p>
+    </div>
+</section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section bg-light">
-    <h2>Technical Skills</h2>
-
+    <section id="skills" class="section">
+    <h2 class="section-title">Technical Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">React.js</div>
-      <div class="skill-card">Node.js</div>
-      <div class="skill-card">Express.js</div>
-      <div class="skill-card">WebSockets</div>
-      <div class="skill-card">MongoDB</div>
-      <div class="skill-card">MySQL</div>
-      <div class="skill-card">HTML & CSS</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">C</div>
-    </div>
-  </section>
+        
+        <div class="skill-card html-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon">
+            <h3 class="skill-name">HTML5</h3>
+        </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
+        <div class="skill-card css-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon">
+            <h3 class="skill-name">CSS3</h3>
+        </div>
+
+        <div class="skill-card js-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+            <h3 class="skill-name">JavaScript</h3>
+        </div>
+
+        <div class="skill-card react-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-icon">
+            <h3 class="skill-name">React.js</h3>
+        </div>
+
+        <div class="skill-card node-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="skill-icon">
+            <h3 class="skill-name">Node.js</h3>
+        </div>
+
+        <div class="skill-card python-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+            <h3 class="skill-name">Python</h3>
+        </div>
+
+        <div class="skill-card react-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" class="skill-icon" style="background: white; border-radius: 4px;"> 
+            <h3 class="skill-name">Express.js</h3>
+        </div>
+
+        <div class="skill-card react-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-icon">
+            <h3 class="skill-name">MongoDB</h3>
+        </div>
+
+        <div class="skill-card react-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
+            <h3 class="skill-name">MySQL</h3>
+        </div>
+
+        <div class="skill-card react-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+            <h3 class="skill-name">Git</h3>
+        </div>
+
+        <div class="skill-card react-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon">
+            <h3 class="skill-name">C</h3>
+        </div>
+
+       
+
+    </div>
+</section>
+
+    <section id="projects" class="section">
     <h2>Projects</h2>
-
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>Real-Time Chat Application</h3>
-        <p>
-          Real-time chat system using WebSockets with authentication,
-          online/offline status, typing indicators, and message acknowledgements.
-        </p>
-        <span class="tech">Node.js • Express • WebSockets • MongoDB</span>
-      </div>
+        <div class="project-card">
+            <h3>Real-Time Chat App</h3>
+            <p>Chat Application with the websocket protocol and Node.js backend.</p>
+            <a href="https://chitchat-xuzy.onrender.com/" target="_blank">View Project</a>
+            <span class="tech">•Node.js • WebSockets</span>
+        </div>
 
-      <div class="project-card">
-        <h3>Healthcare Management System</h3>
-        <p>
-          Role-based healthcare platform for managing medical records,
-          analytics, and secure report access.
-        </p>
-        <span class="tech">Node.js • Express • MongoDB • REST APIs</span>
-      </div>
+        <div class="project-card">
+            <h3>Healthcare Website</h3>
+            <p>Responsive healthcare website built with html, css and javascript.</p>
+            <a href="https://medi-care-plus-rho.vercel.app/" target="_blank">View Project</a>
+            <span class="tech">• HTML • CSS • JavaScript</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Wikipedia Search Application</h3>
+            <p>Search and browse Wikipedia articles with a clean UI.</p>
+            <a href="https://subbu133.ccbp.tech/" target="_blank">View Project</a>
+            <span class="tech">• HTML • CSS • JavaScript</span>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section bg-light">
+   <section id="education" class="section">
     <h2>Education</h2>
+    <div class="projects-grid">
+        
+        <div class="project-card">
+            <h3>B.Tech – ECE</h3>
+            <p>SVUCE, Tirupati</p>
+            <p><em>Secured State Rank 42 in ECET 2024</em></p>
+            <span class="tech">2024 - 2027 • CGPA: 8.6</span>
+        </div>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <h4>B.Tech – ECE</h4>
-        <p>SVUCE, Tirupati (2024–2027)</p>
-        <span>CGPA: 8.6</span>
-      </div>
+        <div class="project-card">
+            <h3>Diploma – ECE</h3>
+            <p>Government Polytechnic College, Ananthapur</p>
+            <span class="tech">2021 - 2024 • 95.6%</span>
+        </div>
 
-      <div class="timeline-item">
-        <h4>Diploma – ECE</h4>
-        <p>Govt. Polytechnic, Ananthapur (2021–2024)</p>
-        <span>95.6%</span>
-      </div>
+        <div class="project-card">
+            <h3>Secondary School Certificate</h3>
+            <p>Balavikas English Medium High School, Kadapa</p>
+            <span class="tech">2021 • 92.6%</span>
+        </div>
 
-      <div class="timeline-item">
-        <h4>SSC</h4>
-        <p>CBSE, Kadapa (2021)</p>
-        <span>92.6%</span>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- CONTACT -->
   <section id="contact" class="section">
-    <h2>Contact</h2>
-
     <div class="contact-card">
-      <p>Email: <strong>tsubramanyam133@gmail.com</strong></p>
-      <p>Phone: <strong>+91 9391361665</strong></p>
-      <p>GitHub: <a href="https://github.com/tsubramanyam133" target="_blank">tsubramanyam133</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/tsubramanyam133" target="_blank">tsubramanyam133</a></p>
+        <h2>Let's Connect</h2>
+        <div class="contact-links">
+            <a href="tel:+919391361665" class="contact-item">
+                <div class="icon-circle">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <span>+91-9391361665</span> </a>
+
+            <a href="mailto:tsubramanyam133@gmail.com" class="contact-item">
+                <div class="icon-circle">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span>tsubramanyam133@gmail.com</span> </a>
+
+            <a href="https://linkedin.com/in/tsubramanyam133" target="_blank" class="contact-item">
+                <div class="icon-circle">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <span>LinkedIn</span> </a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <footer>
-    <p>© 2026 Tappeta Subramanyam. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>© 2026 Tappeta Subramanyam.</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
